@@ -1,0 +1,33 @@
+<div class="main-page" fxLayout="column" fxLayoutAlign="space-between">
+
+  <div class="header" fxFlex="100px" fxLayout="row" fxLayoutAlign="start center" >
+    <label>{{title}}</label>
+  </div>
+  <div class="navigation-bar" fxFlex="60px" fxLayout="row" fxLayoutGap="100px" fxLayoutAlign=" center">
+    <div *ngFor="let nav of navTitles" (click)="selected=nav">{{nav}}</div>
+  </div>
+
+  <div fxFlex>
+
+    <div class="body"  fxLayout="column" fxLayoutAlign="center center"
+      *ngIf="selected==='home'">
+      <img src="https://turkunepal.fi/static/images/tnalogo1.png" alt="">
+      <label>Together we can make a difference</label>
+      <p>We are turku Nepali society that wokr towards better futurre.</p>
+  </div>
+
+    <div class="body"  *ngIf="selected==='events'" fxLayout="column" fxLayoutAlign="center center">
+      <img src="https://turkunepal.fi/static/images/tnalogo1.png" alt="">
+      <label>Together we can make a difference</label>
+      <p>We are turku Nepali society that wokr towards better futurre.</p>
+    </div>
+
+
+    <div class="body"  *ngIf="selected === 'contact'" fxLayout="column" fxLayoutAlign="center center">
+      <img src="https://turkunepal.fi/static/images/tnalogo1.png" alt="">
+      <label>Together we can make a difference</label>
+      <p>Contact Us</p>
+    </div>
+  </div>
+  <div class="footer" fxFlex="60px" fxLayoutAlign="center center"> 2017 TNA</div>
+</div>
