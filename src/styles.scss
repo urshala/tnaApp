@@ -34,3 +34,14 @@ body{
   margin: 0;
   background: $color-background;
 }
+
+.mat-tab-header {
+  background-color: $navigation-background-color;
+  .mat-tab-label{
+    color: $navigation-text-color;
+  }
+}
+
+.mat-tab-body-wrapper{
+  height: 100%;
+}
